@@ -1,0 +1,290 @@
+.square {
+    width: 150px;
+    height: 82px;
+    margin: 10px;
+    background-color: var(--bg-color);
+}
+
+.square1 {
+    width: 230px;
+    height: 242px;
+    margin: 10px;
+    background-color: var(--bg-color);
+}
+
+.main-top-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.row-inner-div {
+    margin-top: 10px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.colorBoxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    justify-content: center;
+}
+
+.Colorsquare {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+
+.Colorsquarebtm {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #ddd;
+
+}
+
+hr {
+    background-color: #000;
+}
+
+/*  */
+.main-div {
+    margin: 5px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.colorCard {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    transition: all .3s;
+    background-size: cover;
+    background-position: top right;
+}
+
+.colorCradcross {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorCradcross i {
+    color: #fff;
+}
+
+.main-div .colorName {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.cstm {
+    height: 250px;
+    flex-direction: column;
+}
+
+/* input button */
+.checkbox {
+    background-color: #FFf;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    position: relative;
+    transition: all 250ms ease-out;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.checkboxMain {
+    background-color: #FFf;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    position: relative;
+    transition: all 250ms ease-out;
+    cursor: pointer;
+}
+
+.colorBoxContainer {
+    margin-top: 10px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    justify-content: center;
+}
+
+.colorBoxContainerMain {
+    margin-top: 10px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: white;
+    justify-content: left;
+}
+
+.colorContainer {
+    margin: 15px 35px;
+    width: 75px;
+    cursor: pointer;
+}
+
+.colorContainerMain {
+    margin: 15px 35px;
+    width: 155px;
+    cursor: pointer;
+    height: 300px;
+}
+
+.colorCard {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    transition: all .3s;
+    background-size: cover;
+    background-position: top right;
+}
+
+.colorCardMain {
+    height: 180px;
+    width: 180px;
+    position: relative;
+    transition: all .3s;
+    background-size: cover;
+    background-position: top right;
+
+}
+
+.crossColorCard {
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorName {
+    font-size: 14;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+
+/* sldier css  */
+
+.slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    /* opacity: 0.7; */
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #04AA6D;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #04AA6D;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+/* mixed color blend */
+.mixedColorblend {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+
+}
+
+.rgb-container {
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 400px;
+}
+
+p {
+    text-align: center;
+}
+
+input[type="range"] {
+    float: right;
+    width: 75%;
+}
+
+input[type="text"] {
+    margin-top: 2rem;
+    width: 250px;
+    padding: 5px 5px 5px 10px;
+    box-sizing: border-box;
+}
+
+.sliderrangediv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.colormixed {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
