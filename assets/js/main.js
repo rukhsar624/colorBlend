@@ -23,7 +23,7 @@ let RGB = []
 let Slider1 = document.getElementById('4')
 let Slider2 = document.getElementById('5')
 let Slider3 = document.getElementById('6')
-let weight=[1,1,1];
+let weight = [1, 1, 1];
 document.getElementById('range1').innerHTML = 100 + '%'
 document.getElementById('range2').innerHTML = 100 + '%'
 document.getElementById('range3').innerHTML = 100 + '%'
@@ -31,44 +31,49 @@ Slider1.addEventListener('input', () => {
   if (Slider1.value == '0') {
     document.getElementById('range1').innerHTML = Slider1.value + '%'
     console.log('range1', Slider1.value)
+    weight[0] = Number(Slider1.value) / 100
+    console.log(weight, "hello1")
     getAvg1(RGB)
-    
+
   } else {
     document.getElementById('range1').innerHTML = Slider1.value + '%'
     console.log('range1', Slider1.value)
     console.log(Number(Slider1.value) / 100)
     getAvg1(RGB)
-    weight[0]= Number(Slider1.value) / 100;
-    console.log(weight,"hello1");
+    weight[0] = Number(Slider1.value) / 100;
+    console.log(weight, "hello1");
   }
 })
 Slider2.addEventListener('input', () => {
   if (Slider2.value == '0') {
     document.getElementById('range2').innerHTML = Slider2.value + '%'
     console.log('range2', Slider2.value)
-
+    weight[1] = Number(Slider1.value) / 100
+    console.log(weight, "hello2")
     getAvg1(RGB)
   } else {
     document.getElementById('range2').innerHTML = Slider2.value + '%'
     console.log('range2', Slider2.value)
     console.log(Number(Slider2.value) / 100)
     getAvg1(RGB)
-    weight[1]= Number(Slider1.value) / 100;
-    console.log(weight,"hello2");
+    weight[1] = Number(Slider2.value) / 100;
+    console.log(weight, "hello2");
   }
 })
 Slider3.addEventListener('input', () => {
   if (Slider3.value == '0') {
     document.getElementById('range3').innerHTML = Slider3.value + '%'
     console.log('range3', Slider3.value)
+    weight[2] = Number(Slider3.value) / 100
+    console.log(weight, "hello3")
     getAvg1(RGB)
   } else {
     document.getElementById('range3').innerHTML = Slider3.value + '%'
     console.log('range3', Slider3.value)
     console.log(Number(Slider3.value) / 100)
     getAvg1(RGB)
-    weight[2]= Number(Slider1.value) / 100;
-    console.log(weight,"hello3");
+    weight[2] = Number(Slider3.value) / 100;
+    console.log(weight, "hello3");
   }
 })
 
@@ -76,7 +81,8 @@ Slider3.addEventListener('input', () => {
 var getAvg1 = function (list) {
   var rgb_total = { r: 0, g: 0, b: 0 }
   var weight_total = 0
-  list.map((elem,i) => {
+  console.log(weight, 'weight aray')
+  list.map((elem, i) => {
     rgb_total.r = (rgb_total.r + Number(elem.r)) * weight[i]
     rgb_total.g = (rgb_total.g + Number(elem.g)) * weight[i]
     rgb_total.b = (rgb_total.b + Number(elem.b)) * weight[i]

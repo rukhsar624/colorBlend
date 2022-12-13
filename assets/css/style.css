@@ -244,12 +244,18 @@ hr {
 }
 
 /* mixed color blend */
-.mixedColorblend {
+/* .mixedColorblend {
     width: 300px;
     height: 300px;
     margin: 10px;
+    border: 1px solid #ddd;// recently comment code 
+} */
+.mixedColorblend {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
     border: 1px solid #ddd;
-
+    border-radius: 6px;
 }
 
 .rgb-container {
