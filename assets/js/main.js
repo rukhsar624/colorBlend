@@ -80,8 +80,8 @@ Slider3.addEventListener('input', () => {
 // range slider avgvalue
 var getAvg1 = function (list) {
   var rgb_total = { r: 0, g: 0, b: 0 }
-  var weight_total = 0
-  console.log(weight, 'weight aray')
+  var weight_total = 0;
+  console.log(list, 'color aray')
   list.map((elem, i) => {
     rgb_total.r = (rgb_total.r + Number(elem.r)) * weight[i]
     rgb_total.g = (rgb_total.g + Number(elem.g)) * weight[i]
