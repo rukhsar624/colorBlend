@@ -188,6 +188,7 @@ $('button').on('click', function () {
   } else if (colorOne && !colorTwo && !colorThree) {
     hexArray = []
     weight=[1,0,0]
+    // document.getElementById('range1').innerHTML = 100 + '%'  //new code 
     document.getElementById('range2').innerHTML = 100 + '%'
     document.getElementById('range3').innerHTML = 100 + '%'
     RGB = []
@@ -209,6 +210,8 @@ $('button').on('click', function () {
     RGB = []
     hexArray = []
     weight=[1,1,0]
+    // document.getElementById('range1').innerHTML = 100 + '%'  //new code 
+    // document.getElementById('range2').innerHTML = 100 + '%'  //new code 
     document.getElementById('range3').innerHTML = 100 + '%'
     const rgb1 = colorOne
       .substring(4, colorOne.length - 1)
