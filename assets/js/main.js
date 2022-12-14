@@ -75,6 +75,7 @@ Slider3.addEventListener('input', () => {
 var getAvg1 = function (list) {
   var rgb_total = { r: 0, g: 0, b: 0 }
   var weight_total = 0;
+  console.log(list,"listprint");
   list.map((elem, i) => {
     rgb_total.r = rgb_total.r + Number(elem.r) * weight[i]
     rgb_total.g = rgb_total.g + Number(elem.g) * weight[i]
@@ -202,6 +203,7 @@ $('button').on('click', function () {
     // const hex = rgbToHex(rgbObj)
     // console.log(hex)
     // hexArray.push(hex)
+    console.log(RGB, 'Main Array1')
     getAvg1(RGB)
   } else if (colorOne && colorTwo && !colorThree) {
     RGB = []
@@ -226,6 +228,7 @@ $('button').on('click', function () {
     const rgbObj2 = { r: rgb2[0], g: rgb2[1], b: rgb2[2] }
     RGB.push(rgbObj2)
     console.log(RGB)
+    console.log(RGB, 'Main Array2')
     getAvg1(RGB)
   } else {
     RGB = []
@@ -262,6 +265,7 @@ $('button').on('click', function () {
     const rgbObj3 = { r: rgb3[0], g: rgb3[1], b: rgb3[2] }
     RGB.push(rgbObj3)
     console.log(RGB)
+    console.log(RGB, 'Main Array3')
     getAvg1(RGB)
   }
   console.log('hexARray', hexArray)
